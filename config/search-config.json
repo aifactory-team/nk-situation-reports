@@ -1,0 +1,23 @@
+{
+  "description": "원자력통제기술원 북한 핵 상황보고 - 수집 대상 및 분류 기준. north-korean-nuclear-activities(광범위)를 KINAC 요구에 맞춰 좁힌 설정.",
+  "source": {
+    "id": "naver_politics_nk",
+    "name": "네이버뉴스 정치 > 북한",
+    "section_url": "https://news.naver.com/breakingnews/section/100/268",
+    "engine": "naver_news_section",
+    "language": "ko",
+    "enabled": true,
+    "note": "정치(100) > 북한(268) 섹션만 수집한다. 타 섹션·타 언어·타 엔진은 수집하지 않는다(좁힘의 핵심)."
+  },
+  "filter_keywords": ["북한 핵", "북핵", "핵실험", "핵물질"],
+  "classification": {
+    "지역": ["평산", "강선", "영변", "풍계리"],
+    "핵물질 생산": ["우라늄", "플루토늄"],
+    "핵주기": ["광산", "정련", "변환", "농축", "제조", "연소", "재처리"],
+    "핵주기시설": ["우라늄 농축시설", "원자로", "방사화학실험시설"]
+  },
+  "rules": {
+    "include_only_if_keyword_match": true,
+    "note_filter": "filter_keywords 중 1개 이상에 해당해야 수집 대상. classification 카테고리는 수집된 기사에 부여하는 라벨이며, 4대 카테고리 중 하나라도 매칭되면 '핵활동 직접 관련'으로 우선순위 상향."
+  }
+}

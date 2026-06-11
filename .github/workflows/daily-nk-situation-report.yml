@@ -1,0 +1,117 @@
+name: Daily NK Situation Report (KINAC)
+
+on:
+  schedule:
+    # 한국시간 오전 8시 (UTC 23:00 전날)
+    - cron: '0 23 * * *'
+  workflow_dispatch:
+    inputs:
+      target_date:
+        description: 'Target date (YYYY-MM-DD). Defaults to today (KST) if empty.'
+        required: false
+        type: string
+
+permissions:
+  contents: write
+  id-token: write
+
+jobs:
+  generate-report:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 10
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Setup Cheliped Browser
+        run: |
+          git clone https://github.com/tykimos/cheliped-browser.git /tmp/cheliped-browser
+          cd /tmp/cheliped-browser/scripts
+          npm install
+          npm run build 2>/dev/null || true
+          echo "CHELIPED_CLI=/tmp/cheliped-browser/scripts/cheliped-cli.mjs" >> $GITHUB_ENV
+
+      - name: Verify Cheliped and Chrome
+        run: |
+          which google-chrome || which chromium-browser || echo "No Chrome found"
+          node "$CHELIPED_CLI" '[{"cmd":"goto","args":["https://www.google.com"]},{"cmd":"close"}]' && echo "Cheliped: OK" || echo "Cheliped: FAILED"
+
+      - name: Determine target date
+        id: date
+        run: |
+          if [ -n "${{ github.event.inputs.target_date }}" ]; then
+            TARGET="${{ github.event.inputs.target_date }}"
+          else
+            # cron이 UTC 23:00(=KST 08:00)에 실행되므로 KST 기준 날짜 사용
+            TARGET=$(TZ=Asia/Seoul date +%Y-%m-%d)
+          fi
+          echo "target=$TARGET" >> $GITHUB_OUTPUT
+          echo "year=$(echo $TARGET | cut -d- -f1)" >> $GITHUB_OUTPUT
+          echo "month=$(echo $TARGET | cut -d- -f2)" >> $GITHUB_OUTPUT
+
+      - name: Generate report with Claude Code
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        uses: anthropics/claude-code-action@v1
+        with:
+          claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+          claude_args: "--model claude-opus-4-8 --allowedTools 'Bash(*)' 'Read(*)' 'Write(*)' 'Edit(*)' 'Glob(*)' 'Grep(*)' 'WebSearch(*)' 'WebFetch(*)'"
+          use_bedrock: false
+          use_vertex: false
+          prompt: |
+            You are the KINAC North Korea nuclear "situation report" agent (narrowed scope).
+            **Target date:** ${{ steps.date.outputs.target }}
+            **Cheliped CLI:** Available at $CHELIPED_CLI (use this to crawl Naver — direct fetch of news.naver.com is blocked).
+
+            Read CLAUDE.md for project rules.
+            Read config/search-config.json for the single source (Naver politics > NK section), filter keywords, and the KINAC 4-category classification.
+
+            Run the `nk-situation-report` pipeline. For each phase, read the agent file for your role and the referenced skill file for detailed rules. Scope is NARROW: only the Naver politics>NK section, Korean keywords only, classify by the 4 KINAC categories.
+
+            ## Phase 0: Prepare
+            ```bash
+            mkdir -p sources/${{ steps.date.outputs.target }}/items
+            mkdir -p reports/${{ steps.date.outputs.year }}/${{ steps.date.outputs.month }}
+            ```
+            Find previous 7 days of `sources/*/index.json` and `reports/**/*.md` using Glob.
+
+            ## Phase 1: Collect
+            Read `.claude/agents/nk-collector.md` for your role.
+            Read `.claude/skills/nk-situation-report/references/search-strategy.md` for crawl method and output schema.
+            Crawl the Naver politics>NK section via Cheliped:
+            ```bash
+            node "$CHELIPED_CLI" '[{"cmd":"goto","args":["https://news.naver.com/breakingnews/section/100/268"]},{"cmd":"wait","args":["2000"]},{"cmd":"extract","args":["all"]},{"cmd":"close"}]'
+            ```
+            Filter by keywords (북한 핵, 북핵, 핵실험, 핵물질). Save `sources/${{ steps.date.outputs.target }}/search-results.json`.
+
+            ## Phase 2: Classify
+            Read `.claude/agents/nk-classifier.md` for your role.
+            Read `.claude/skills/nk-situation-report/references/classification-rules.md` for KINAC categories + dedup tagging + output schemas.
+            Save `sources/${{ steps.date.outputs.target }}/index.json` and `sources/${{ steps.date.outputs.target }}/items/src-XXX.json`.
+
+            ## Phase 3: Analyze
+            Read `.claude/agents/nk-analyst.md` for your role.
+            Read `.claude/skills/nk-situation-report/references/analysis-guide.md` for analysis principles and output formats.
+            Save `sources/${{ steps.date.outputs.target }}/analysis.md` and `sources/${{ steps.date.outputs.target }}/report-basis.md`.
+
+            ## Phase 4: Report
+            Read `.claude/agents/nk-reporter.md` for your role.
+            Read `.claude/skills/nk-situation-report/references/report-format.md` for the KINAC 4-category report structure.
+            Save `reports/${{ steps.date.outputs.year }}/${{ steps.date.outputs.month }}/${{ steps.date.outputs.target }}.md`.
+
+            ## Phase 5: Commit
+            ```bash
+            git config user.name "github-actions[bot]"
+            git config user.email "github-actions[bot]@users.noreply.github.com"
+            git add sources/ reports/
+            git commit -m "report: KINAC NK situation report (${{ steps.date.outputs.target }})"
+            git push
+            ```
