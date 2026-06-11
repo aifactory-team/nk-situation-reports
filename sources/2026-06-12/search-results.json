@@ -1,0 +1,135 @@
+{
+  "date": "2026-06-12",
+  "collected_at": "2026-06-12T08:00:00+09:00",
+  "source": "naver_politics_nk",
+  "section_url": "https://news.naver.com/breakingnews/section/100/268",
+  "total_collected_in_section": 36,
+  "total_results": 10,
+  "filtered_out": 26,
+  "filter_keywords": [
+    "북한 핵",
+    "북핵",
+    "핵실험",
+    "핵물질"
+  ],
+  "results": [
+    {
+      "title": "\"북, 우라늄 농축 능력 75% 확대 전망\"",
+      "url": "https://n.news.naver.com/article/422/0000873930",
+      "snippet": "북한이 영변 핵 단지 내에 신규 핵시설을 갖추고 핵무기 생산 능력을 확대하고 있다는 분석이 제기됐습니다. 월스트리트저널은 현지시간 10일 영국 검증 조사 훈련 정보센터 버틱의 분석을 인용해, 북한의 신규 우라늄 농축",
+      "source_name": "연합뉴스TV",
+      "published_relative": "50분전",
+      "published_at": "2026-06-12",
+      "matched_keywords": [
+        "북핵",
+        "핵물질"
+      ]
+    },
+    {
+      "title": "英연구소 \"北 영변 새 핵시설 가동시 우라늄 농축능력 75% ↑\"",
+      "url": "https://n.news.naver.com/article/421/0008998616",
+      "snippet": "북한 영변의 새로운 핵 시설이 완전 가동에 들어가면 우라늄 농축 능력이 기존보다 75% 확대될 수 있다고 월스트리트저널(WSJ)이 10일(현지시간) 보도했다. WSJ에 따르면 국제 군비통제 협정 이행 및 검증을 지원",
+      "source_name": "뉴스1",
+      "published_relative": "15시간전",
+      "published_at": "2026-06-12",
+      "matched_keywords": [
+        "북핵",
+        "핵물질"
+      ]
+    },
+    {
+      "title": "“北, 우라늄 농축 능력 75% 확대 전망…핵무력 증강 의지 과시”",
+      "url": "https://n.news.naver.com/article/029/0003031282",
+      "snippet": "북한이 영변 핵 단지 내에 신규 핵시설을 갖추고 핵무기 생산 능력을 확대하고 있다는 분석이 제기됐다. 미국 일간 월스트리트저널(WSJ)은 10일(현지시간) 영국 검증조사훈련정보센터(VERTIC·버틱) 분석을 인용해",
+      "source_name": "디지털타임스",
+      "published_relative": "15시간전",
+      "published_at": "2026-06-12",
+      "matched_keywords": [
+        "북핵",
+        "핵물질"
+      ]
+    },
+    {
+      "title": "[단독] 김정은 수행한 새 핵 담당 간부는 '최일환'…세대교체 단행",
+      "url": "https://n.news.naver.com/article/421/0008999552",
+      "snippet": "김정은 북한 노동당 총비서의 지난 3일 새 핵물질 생산 공장(우라늄 농축 시설) 시찰을 바로 옆에서 수행한 인물이 최일환 군수공업부 부부장으로 12일 확인됐다. 최 부부장은 올해 2월 개최된 노동당 9차 대회를 통해",
+      "source_name": "뉴스1",
+      "published_relative": "1시간전",
+      "published_at": "2026-06-12",
+      "matched_keywords": [
+        "핵물질",
+        "북핵"
+      ]
+    },
+    {
+      "title": "한미, 서울서 핵협의그룹 회의…\"북한 비핵화 공동목표 확인\"(종합)",
+      "url": "https://n.news.naver.com/article/001/0016134205",
+      "snippet": "공동언론성명 발표…직전 회의땐 北관련 언급 없어 \"핵·재래식 통합 지속 발전\"…NCG 보안지침 서명 한미가 11일 서울에서 확장억제 협의체인 핵협의그룹(NCG) 제6차 회의를 열고 북한 비핵화 목표를 재확인했다. 이",
+      "source_name": "연합뉴스",
+      "published_relative": "9시간전",
+      "published_at": "2026-06-12",
+      "matched_keywords": [
+        "북한 핵",
+        "북핵"
+      ]
+    },
+    {
+      "title": "한미, 핵협의그룹 개최…美 “핵 포함 모든 능력으로 확장억제”",
+      "url": "https://n.news.naver.com/article/022/0004134813",
+      "snippet": "한국과 미국이 11일 서울에서 제6차 핵협의그룹(NCG) 회의를 열고 북한 핵·미사일 위협에 대응하기 위해 미국 핵전력과 한국 재래식 전력을 연계하는 방안 등을 논의했다. 국방부는 김홍철 국방정책실장과 로버트 수퍼",
+      "source_name": "세계일보",
+      "published_relative": "10시간전",
+      "published_at": "2026-06-12",
+      "matched_keywords": [
+        "북한 핵",
+        "북핵"
+      ]
+    },
+    {
+      "title": "한미, 서울서 핵협의그룹 회의…\"북한 비핵화 공동목표 확인\"",
+      "url": "https://n.news.naver.com/article/001/0016134111",
+      "snippet": "공동언론성명 발표…직전 회의땐 北관련 언급 없어 \"한미 핵·재래식 통합 지속 발전\"…NCG 보안지침 서명 한미가 11일 서울에서 확장억제 협의체인 핵협의그룹(NCG) 제6차 회의를 열고 북한 비핵화 목표를 재확인했다",
+      "source_name": "연합뉴스",
+      "published_relative": "11시간전",
+      "published_at": "2026-06-12",
+      "matched_keywords": [
+        "북한 핵",
+        "북핵"
+      ]
+    },
+    {
+      "title": "한국·EU 정상 “북·러 불법 군사 협력 강력 규탄”",
+      "url": "https://n.news.naver.com/article/022/0004134781",
+      "snippet": "李대통령, 회담 후 공동성명 “우크라전 전면적인 휴전 필요성” 북한 핵 보유 인정 불가 입장도 정부 출범 후 최고수위 北 비판 美·日도 北 완전 비핵화 재천명 정부가 유럽연합(EU)과 정상회담을 계기로 북한과 러시아",
+      "source_name": "세계일보",
+      "published_relative": "11시간전",
+      "published_at": "2026-06-12",
+      "matched_keywords": [
+        "북한 핵",
+        "북핵"
+      ]
+    },
+    {
+      "title": "외교부, 비핵화 빠진 북중회담에도 \"중국 협조 계속 견인\"",
+      "url": "https://n.news.naver.com/article/001/0016134029",
+      "snippet": "\"북러 군사협력 정부 입장 변화 없다…일관되게 규탄해와\" 김동현 민선희 기자 = 정부는 중국이 최근 북한과의 정상회담에서 북한의 핵무기 보유를 사실상 용인한 게 아니냐는 평가가 나오는 가운데도 한반도 평화를 위한 중",
+      "source_name": "연합뉴스",
+      "published_relative": "12시간전",
+      "published_at": "2026-06-12",
+      "matched_keywords": [
+        "북핵"
+      ]
+    },
+    {
+      "title": "美日 “지역 핵위협 증대 감안해 日 방위능력 논의”…북중러 밀착에 대응",
+      "url": "https://n.news.naver.com/article/020/0003726163",
+      "snippet": "미국과 일본이 8, 9일 도쿄에서 ‘확장억제대화’(EDD)를 열어 북한의 완전한 비핵화를 강조하는 입장을 분명히 했다. 북한, 중국, 러시아 등의 핵 위협이 증대되는 것에 인식을 같이 하고, 미국 핵전력의 현대화 등",
+      "source_name": "동아일보",
+      "published_relative": "13시간전",
+      "published_at": "2026-06-12",
+      "matched_keywords": [
+        "북핵"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "id": "src-001",
+  "title": "\"북, 우라늄 농축 능력 75% 확대 전망\"",
+  "url": "https://n.news.naver.com/article/422/0000873930",
+  "snippet": "북한이 영변 핵 단지 내에 신규 핵시설을 갖추고 핵무기 생산 능력을 확대하고 있다는 분석이 제기됐습니다. 월스트리트저널은 현지시간 10일 영국 검증 조사 훈련 정보센터 버틱의 분석을 인용해, 북한의 신규 우라늄 농축",
+  "source_name": "연합뉴스TV",
+  "published_at": "2026-06-12",
+  "published_relative": "50분전",
+  "discovered_date": "2026-06-12",
+  "matched_keywords": [
+    "북핵",
+    "핵물질"
+  ],
+  "categories": [
+    "지역",
+    "핵물질 생산",
+    "핵주기",
+    "핵주기시설"
+  ],
+  "kinac_relevant": true,
+  "category_reason": "영변 핵 단지 내 신규 핵시설로 우라늄 농축 능력 확대 분석 → 지역(영변)+핵물질 생산(우라늄)+핵주기(농축)+핵주기시설(우라늄 농축시설)",
+  "tag": "new",
+  "tag_reason": "첫 실행 — 이전 7일 소스(index.json) 없음. 전체 신규 처리",
+  "related_report": null,
+  "related_item": null
+}

@@ -1,0 +1,25 @@
+{
+  "id": "src-004",
+  "title": "[단독] 김정은 수행한 새 핵 담당 간부는 '최일환'…세대교체 단행",
+  "url": "https://n.news.naver.com/article/421/0008999552",
+  "snippet": "김정은 북한 노동당 총비서의 지난 3일 새 핵물질 생산 공장(우라늄 농축 시설) 시찰을 바로 옆에서 수행한 인물이 최일환 군수공업부 부부장으로 12일 확인됐다. 최 부부장은 올해 2월 개최된 노동당 9차 대회를 통해",
+  "source_name": "뉴스1",
+  "published_at": "2026-06-12",
+  "published_relative": "1시간전",
+  "discovered_date": "2026-06-12",
+  "matched_keywords": [
+    "핵물질",
+    "북핵"
+  ],
+  "categories": [
+    "핵물질 생산",
+    "핵주기",
+    "핵주기시설"
+  ],
+  "kinac_relevant": true,
+  "category_reason": "김정은 수행 새 핵 담당 간부(최일환) 인사, 6.3 핵물질 생산 공장(우라늄 농축 시설) 시찰 수행 → 핵물질 생산(우라늄)+핵주기(농축)+핵주기시설(우라늄 농축시설). 시설 소재 지명은 제목·요약에 미명시되어 지역 미부여",
+  "tag": "new",
+  "tag_reason": "첫 실행 — 이전 7일 소스(index.json) 없음. 전체 신규 처리",
+  "related_report": null,
+  "related_item": null
+}

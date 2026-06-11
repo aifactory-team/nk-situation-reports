@@ -1,0 +1,126 @@
+{
+  "date": "2026-06-12",
+  "source": "naver_politics_nk",
+  "total": 10,
+  "new": 10,
+  "reported": 0,
+  "update": 0,
+  "kinac_relevant_count": 4,
+  "by_category": {
+    "지역": 3,
+    "핵물질 생산": 4,
+    "핵주기": 4,
+    "핵주기시설": 4
+  },
+  "items": [
+    {
+      "id": "src-001",
+      "title": "\"북, 우라늄 농축 능력 75% 확대 전망\"",
+      "url": "https://n.news.naver.com/article/422/0000873930",
+      "tag": "new",
+      "categories": [
+        "지역",
+        "핵물질 생산",
+        "핵주기",
+        "핵주기시설"
+      ],
+      "kinac_relevant": true,
+      "related_report": null
+    },
+    {
+      "id": "src-002",
+      "title": "英연구소 \"北 영변 새 핵시설 가동시 우라늄 농축능력 75% ↑\"",
+      "url": "https://n.news.naver.com/article/421/0008998616",
+      "tag": "new",
+      "categories": [
+        "지역",
+        "핵물질 생산",
+        "핵주기",
+        "핵주기시설"
+      ],
+      "kinac_relevant": true,
+      "related_report": null
+    },
+    {
+      "id": "src-003",
+      "title": "“北, 우라늄 농축 능력 75% 확대 전망…핵무력 증강 의지 과시”",
+      "url": "https://n.news.naver.com/article/029/0003031282",
+      "tag": "new",
+      "categories": [
+        "지역",
+        "핵물질 생산",
+        "핵주기",
+        "핵주기시설"
+      ],
+      "kinac_relevant": true,
+      "related_report": null
+    },
+    {
+      "id": "src-004",
+      "title": "[단독] 김정은 수행한 새 핵 담당 간부는 '최일환'…세대교체 단행",
+      "url": "https://n.news.naver.com/article/421/0008999552",
+      "tag": "new",
+      "categories": [
+        "핵물질 생산",
+        "핵주기",
+        "핵주기시설"
+      ],
+      "kinac_relevant": true,
+      "related_report": null
+    },
+    {
+      "id": "src-005",
+      "title": "한미, 서울서 핵협의그룹 회의…\"북한 비핵화 공동목표 확인\"(종합)",
+      "url": "https://n.news.naver.com/article/001/0016134205",
+      "tag": "new",
+      "categories": [],
+      "kinac_relevant": false,
+      "related_report": null
+    },
+    {
+      "id": "src-006",
+      "title": "한미, 핵협의그룹 개최…美 “핵 포함 모든 능력으로 확장억제”",
+      "url": "https://n.news.naver.com/article/022/0004134813",
+      "tag": "new",
+      "categories": [],
+      "kinac_relevant": false,
+      "related_report": null
+    },
+    {
+      "id": "src-007",
+      "title": "한미, 서울서 핵협의그룹 회의…\"북한 비핵화 공동목표 확인\"",
+      "url": "https://n.news.naver.com/article/001/0016134111",
+      "tag": "new",
+      "categories": [],
+      "kinac_relevant": false,
+      "related_report": null
+    },
+    {
+      "id": "src-008",
+      "title": "한국·EU 정상 “북·러 불법 군사 협력 강력 규탄”",
+      "url": "https://n.news.naver.com/article/022/0004134781",
+      "tag": "new",
+      "categories": [],
+      "kinac_relevant": false,
+      "related_report": null
+    },
+    {
+      "id": "src-009",
+      "title": "외교부, 비핵화 빠진 북중회담에도 \"중국 협조 계속 견인\"",
+      "url": "https://n.news.naver.com/article/001/0016134029",
+      "tag": "new",
+      "categories": [],
+      "kinac_relevant": false,
+      "related_report": null
+    },
+    {
+      "id": "src-010",
+      "title": "美日 “지역 핵위협 증대 감안해 日 방위능력 논의”…북중러 밀착에 대응",
+      "url": "https://n.news.naver.com/article/020/0003726163",
+      "tag": "new",
+      "categories": [],
+      "kinac_relevant": false,
+      "related_report": null
+    }
+  ]
+}
