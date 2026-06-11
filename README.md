@@ -25,3 +25,12 @@ reports/
     └── MM/
         └── YYYY-MM-DD.md
 ```
+
+## 실행 방식
+
+매일 KST 08:00 GitHub Actions가 [cheliped-browser](https://github.com/tykimos/cheliped-browser)로 네이버 섹션을 크롤링하고, Claude(Opus)가 4단계 파이프라인(수집→분류→분석→보고서)을 수행해 보고서를 자동 커밋합니다.
+
+## 문서
+
+- **[기술 아키텍처](docs/ARCHITECTURE.md)** — 개념도, 기술 스택, 크롤링 원리(Cheliped), 컴포넌트/시퀀스 다이어그램, 분류 알고리즘, 운영·트러블슈팅
+- 하네스 규칙: [`CLAUDE.md`](CLAUDE.md)
