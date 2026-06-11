@@ -41,3 +41,4 @@ reports/YYYY/MM/YYYY-MM-DD.md # Phase4 최종 보고서
 | 2026-06-11 | 초기 구성 (north-korean-nuclear-activities에서 이식·좁힘) | 전체 | KINAC 요구: 네이버 정치>북한 단일소스 + 4대 카테고리 분류 |
 | 2026-06-12 | GHA 워크플로 추가 (cheliped-browser 설치·크롤링) | .github/workflows | 자동 일일 실행 + 네이버 크롤링 차단 우회 |
 | 2026-06-12 | 기술 문서 작성 + actions 버전 상향(@v5/Node22) | docs/ARCHITECTURE.md, .github/workflows | 개념도·시퀀스 등 기술 문서화, Node20 deprecation 대응 |
+| 2026-06-12 | 위키 자동 발행 단계 추가 | .github/workflows | 매일 보고서를 GitHub Wiki(Home/_Sidebar/Monthly)로 발행. 위키 첫 페이지는 웹 UI 1회 생성 필요 |
