@@ -115,3 +115,65 @@ jobs:
             git commit -m "report: KINAC NK situation report (${{ steps.date.outputs.target }})"
             git push
             ```
+
+      - name: Publish to Wiki
+        if: success()
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          TARGET: ${{ steps.date.outputs.target }}
+          YEAR: ${{ steps.date.outputs.year }}
+          MONTH: ${{ steps.date.outputs.month }}
+        run: |
+          set -e
+          REPORT="reports/${YEAR}/${MONTH}/${TARGET}.md"
+          # Claude 단계가 커밋한 최신 보고서를 작업트리에 반영
+          git pull --ff-only origin main || true
+          if [ ! -f "$REPORT" ]; then
+            echo "::warning::No report at $REPORT — skip wiki publish"
+            exit 0
+          fi
+          WIKI_URL="https://x-access-token:${GITHUB_TOKEN}@github.com/${{ github.repository }}.wiki.git"
+          if ! git clone "$WIKI_URL" /tmp/wiki 2>/dev/null; then
+            echo "::warning::Wiki repo not initialized. 웹 UI에서 첫 페이지를 1회 생성하면 이후 자동 발행됩니다."
+            exit 0
+          fi
+          # 보고서 → 위키 페이지 (frontmatter 제거)
+          sed '1{/^---$/!q;};1,/^---$/d' "$REPORT" > "/tmp/wiki/${TARGET}.md"
+          cd /tmp/wiki
+          DATES=$(ls 20*-*-*.md 2>/dev/null | sed 's/\.md$//' | sort -r)
+          LATEST=$(echo "$DATES" | head -1)
+          # Home.md
+          {
+            echo "# 원자력통제기술원 북한 핵 상황보고 Wiki"
+            echo
+            echo "네이버뉴스 정치>북한 섹션 기반 KINAC 4대 카테고리 일일 상황보고 아카이브. 매일 KST 08:00 자동 발행."
+            echo
+            echo "## 최신 보고서"
+            echo "- [${LATEST}](${LATEST})"
+            echo
+            echo "## 월별 인덱스"
+            echo "$DATES" | sed 's/\(....-..\)-.*/\1/' | sort -ru | while read -r ym; do
+              echo "- [${ym}](Monthly-${ym})"
+            done
+          } > Home.md
+          # _Sidebar.md (최근 14일)
+          {
+            echo "### 북한 핵 상황보고"
+            echo "- [Home](Home)"
+            echo
+            echo "**최근 보고서**"
+            echo "$DATES" | head -14 | while read -r d; do echo "- [${d}](${d})"; done
+          } > _Sidebar.md
+          # Monthly-YYYY-MM.md (월별 전체)
+          for ym in $(echo "$DATES" | sed 's/\(....-..\)-.*/\1/' | sort -ru); do
+            {
+              echo "# ${ym} 상황보고"
+              echo
+              echo "$DATES" | grep "^${ym}" | while read -r d; do echo "- [${d}](${d})"; done
+            } > "Monthly-${ym}.md"
+          done
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git diff --cached --quiet || git commit -m "wiki: ${TARGET}"
+          git push
