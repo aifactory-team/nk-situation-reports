@@ -1,0 +1,17 @@
+{
+  "id": "src-001",
+  "title": "한미일 외교, 북중 정상회담 후 첫 협의···대북 공조 확인",
+  "url": "https://n.news.naver.com/mnews/article/032/0003451723",
+  "snippet": "한미일 외교당국이 북한의 핵·미사일 위협에 대응하기 위해 3국 공조를 강화하기로 했다. 일본 외무성은 12일 한미일 북한 문제 담당 협의를 개최, 유엔 안보리 결의에 따른 북한의 완전한 비핵화에 대한 의지를 재확인하고 북·러 군사협력 심화에 우려를 표명했다.",
+  "source_name": "경향신문",
+  "published_at": "2026-06-12 22:00",
+  "discovered_date": "2026-06-13",
+  "matched_keywords": ["북핵", "비핵화"],
+  "categories": [],
+  "kinac_relevant": false,
+  "category_reason": "북한 핵·미사일 위협 및 완전한 비핵화를 다루나, 4대 카테고리 키워드(지명/우라늄·플루토늄/공정/시설)는 미언급 → 배경 동향(외교)으로 분류. categories 비움.",
+  "tag": "new",
+  "tag_reason": "이전 7일(2026-06-12) 소스에 동일 URL·유사 제목 없음. 한미일 3자 협의는 신규 사건.",
+  "related_report": null,
+  "related_item": null
+}
