@@ -1,0 +1,23 @@
+{
+  "id": "src-001",
+  "title": "北, 한미 NCG 회의 ‘비핵화’ 언급에 반발 “공허한 망상”",
+  "url": "https://n.news.naver.com/mnews/article/023/0003981895",
+  "snippet": "북한은 한미가 확장억제 협의체인 핵협의그룹(NCG) 회의에서 ‘북한 비핵화’ 목표를 확인한 것과 관련해 “교전 상대방의 핵무장 해제를 운운하는 것이야말로 어불성설이며 공허한 망상”이라고 했다. 북한 외무성 대변인은",
+  "source_name": "조선일보",
+  "published_at": "2026-06-14 09:12",
+  "discovered_date": "2026-06-14",
+  "matched_keywords": [
+    "비핵화",
+    "핵무장",
+    "핵협의그룹",
+    "확장억제",
+    "NCG"
+  ],
+  "categories": [],
+  "kinac_relevant": false,
+  "category_reason": "KINAC 4대 카테고리 키워드(지역/우라늄·플루토늄/공정/시설) 미언급. 핵정책·외교 담화로 배경 동향에 해당.",
+  "tag": "update",
+  "tag_reason": "2026-06-12 보고서가 다룬 제6차 한미 핵협의그룹(NCG) 회의에 대한 북한 외무성의 공식 반발 담화(후속 새 성명)",
+  "related_report": "reports/2026/06/2026-06-12.md",
+  "related_item": "2026-06-12 한미 핵협의그룹(NCG) 회의 (배경동향)"
+}

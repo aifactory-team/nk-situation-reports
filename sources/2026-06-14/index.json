@@ -1,0 +1,98 @@
+{
+  "date": "2026-06-14",
+  "source": "naver_politics_nk",
+  "total": 9,
+  "new": 2,
+  "reported": 0,
+  "update": 7,
+  "kinac_relevant_count": 0,
+  "by_category": {
+    "지역": 0,
+    "핵물질 생산": 0,
+    "핵주기": 0,
+    "핵주기시설": 0
+  },
+  "items": [
+    {
+      "id": "src-001",
+      "title": "北, 한미 NCG 회의 ‘비핵화’ 언급에 반발 “공허한 망상”",
+      "url": "https://n.news.naver.com/mnews/article/023/0003981895",
+      "tag": "update",
+      "categories": [],
+      "kinac_relevant": false,
+      "related_report": "reports/2026/06/2026-06-12.md"
+    },
+    {
+      "id": "src-002",
+      "title": "北 \"교전상대방에 핵무장 해제 운운…공허한 망상\"",
+      "url": "https://n.news.naver.com/mnews/article/422/0000874490",
+      "tag": "update",
+      "categories": [],
+      "kinac_relevant": false,
+      "related_report": "reports/2026/06/2026-06-12.md"
+    },
+    {
+      "id": "src-003",
+      "title": "北 “비핵화는 되돌릴 수 없이 종결된 사안”…한미 NCG회의에 반발",
+      "url": "https://n.news.naver.com/mnews/article/020/0003726599",
+      "tag": "update",
+      "categories": [],
+      "kinac_relevant": false,
+      "related_report": "reports/2026/06/2026-06-12.md"
+    },
+    {
+      "id": "src-004",
+      "title": "北 “교전상대방 핵무장 해제 운운하는 것은 공허한 망상”",
+      "url": "https://n.news.naver.com/mnews/article/029/0003031528",
+      "tag": "update",
+      "categories": [],
+      "kinac_relevant": false,
+      "related_report": "reports/2026/06/2026-06-12.md"
+    },
+    {
+      "id": "src-005",
+      "title": "北 \"비핵화는 되돌릴 수 없이 종결된 사안\"",
+      "url": "https://n.news.naver.com/mnews/article/003/0014004886",
+      "tag": "update",
+      "categories": [],
+      "kinac_relevant": false,
+      "related_report": "reports/2026/06/2026-06-12.md"
+    },
+    {
+      "id": "src-006",
+      "title": "北 외무성 \"비핵화는 되돌릴 수 없는 종결된 사안\"…한미 NCG 회의 비난",
+      "url": "https://n.news.naver.com/mnews/article/421/0009002078",
+      "tag": "update",
+      "categories": [],
+      "kinac_relevant": false,
+      "related_report": "reports/2026/06/2026-06-12.md"
+    },
+    {
+      "id": "src-007",
+      "title": "北 \"교전상대방에 핵무장 해제 운운하는 것은 공허한 망상\"",
+      "url": "https://n.news.naver.com/mnews/article/001/0016137270",
+      "tag": "update",
+      "categories": [],
+      "kinac_relevant": false,
+      "related_report": "reports/2026/06/2026-06-12.md"
+    },
+    {
+      "id": "src-008",
+      "title": "북한, 韓·EU성명에 \"평화가면 내던져…적대 원칙불변\"",
+      "url": "https://n.news.naver.com/mnews/article/422/0000874467",
+      "tag": "new",
+      "categories": [],
+      "kinac_relevant": false,
+      "related_report": null
+    },
+    {
+      "id": "src-009",
+      "title": "北, 한·EU 공동성명 비난 \"韓집권자 평화 가면 벗어던져…대적 불변\"",
+      "url": "https://n.news.naver.com/mnews/article/079/0004157514",
+      "tag": "new",
+      "categories": [],
+      "kinac_relevant": false,
+      "related_report": null
+    }
+  ]
+}
