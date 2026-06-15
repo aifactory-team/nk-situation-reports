@@ -1,0 +1,23 @@
+{
+  "id": "src-003",
+  "title": "韓-EU 등 ‘北비핵화’ 강조에… 北 “평화 가면 벗어던져, 적대 불변”",
+  "url": "https://n.news.naver.com/mnews/article/020/0003726764",
+  "snippet": "북한이 13, 14일 이재명 정부를 비난하며 ‘핵보유국’ 지위를 주장하는 담화를 잇달아 쏟아냈다. 10일(현지 시간) 한국과 유럽연합(EU) 정상회의에서 채택한 공동성명과 11일 제6차 한미 핵협의그룹(NCG) 등에",
+  "source_name": "동아일보",
+  "published_at": "2026-06-15 05:22",
+  "discovered_date": "2026-06-15",
+  "matched_keywords": [
+    "비핵화",
+    "핵협의그룹",
+    "NCG",
+    "핵보유국",
+    "북한 핵"
+  ],
+  "categories": [],
+  "kinac_relevant": false,
+  "category_reason": "北 핵보유국 지위 주장 담화. 비핵화·핵보유국 등 정책 키워드이며 KINAC 기술 카테고리 미해당.",
+  "tag": "update",
+  "tag_reason": "06-14 보고된 北 韓·EU 공동성명 비난(핵보유국 주장)의 후속 종합. 13·14일 잇단 담화 내용·핵보유국 지위 주장 구체화.",
+  "related_report": "reports/2026/06/2026-06-14.md",
+  "related_item": null
+}

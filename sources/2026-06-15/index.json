@@ -1,0 +1,80 @@
+{
+  "date": "2026-06-15",
+  "source": "naver_politics_nk",
+  "total": 7,
+  "new": 2,
+  "reported": 0,
+  "update": 5,
+  "kinac_relevant_count": 0,
+  "by_category": {
+    "지역": 0,
+    "핵물질 생산": 0,
+    "핵주기": 0,
+    "핵주기시설": 0
+  },
+  "items": [
+    {
+      "id": "src-001",
+      "title": "[정욱식 칼럼] 미국이 “북한 비핵화”에 진심일수록 한국도 위험해진다",
+      "url": "https://n.news.naver.com/mnews/article/028/0002809652",
+      "tag": "new",
+      "categories": [],
+      "kinac_relevant": false,
+      "related_report": null
+    },
+    {
+      "id": "src-002",
+      "title": "靑 “한반도 비핵화는 국제사회 일관 목표”… 北 비난에 반박",
+      "url": "https://n.news.naver.com/mnews/article/022/0004135452",
+      "tag": "update",
+      "categories": [],
+      "kinac_relevant": false,
+      "related_report": "reports/2026/06/2026-06-14.md"
+    },
+    {
+      "id": "src-003",
+      "title": "韓-EU 등 ‘北비핵화’ 강조에… 北 “평화 가면 벗어던져, 적대 불변”",
+      "url": "https://n.news.naver.com/mnews/article/020/0003726764",
+      "tag": "update",
+      "categories": [],
+      "kinac_relevant": false,
+      "related_report": "reports/2026/06/2026-06-14.md"
+    },
+    {
+      "id": "src-004",
+      "title": "돌연 김정은과 찍은 사진 올린 트럼프… 이란 다음은 북한?",
+      "url": "https://n.news.naver.com/mnews/article/005/0001854919",
+      "tag": "new",
+      "categories": [],
+      "kinac_relevant": false,
+      "related_report": null
+    },
+    {
+      "id": "src-005",
+      "title": "靑, 北 NCG 성명 반발에 \"한미 확장억제 협력은 책임있는 정부 의무\"",
+      "url": "https://n.news.naver.com/mnews/article/003/0014005600",
+      "tag": "update",
+      "categories": [],
+      "kinac_relevant": false,
+      "related_report": "reports/2026/06/2026-06-14.md"
+    },
+    {
+      "id": "src-006",
+      "title": "북 “미·일·한 강변해도 핵보유국 지위는 불변”",
+      "url": "https://n.news.naver.com/mnews/article/032/0003451952",
+      "tag": "update",
+      "categories": [],
+      "kinac_relevant": false,
+      "related_report": "reports/2026/06/2026-06-14.md"
+    },
+    {
+      "id": "src-007",
+      "title": "靑, 北 '핵보유국 지위 영향 못 미쳐' 주장에 \"비핵화는 일관된 목표\"",
+      "url": "https://n.news.naver.com/mnews/article/421/0009002909",
+      "tag": "update",
+      "categories": [],
+      "kinac_relevant": false,
+      "related_report": "reports/2026/06/2026-06-14.md"
+    }
+  ]
+}
